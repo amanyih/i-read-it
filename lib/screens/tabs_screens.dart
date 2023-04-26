@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:i_read_it/screens/widgets/right_drawer.dart';
 
 class TabsScreen extends StatefulWidget {
   const TabsScreen({super.key});
@@ -21,7 +22,7 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(),
-      endDrawer: Drawer(),
+      endDrawer: RightDrawer(),
       appBar: AppBar(
         title: Text("Home"),
         actions: [
